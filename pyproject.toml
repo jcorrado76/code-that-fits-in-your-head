@@ -25,6 +25,9 @@ ipykernel = "^6.17.1"
 pandas-stubs = "*"
 flake8-bugbear = "*"
 
+[tool.isort]
+profile = "black"
+
 
 [build-system]
 requires = ["poetry-core"]
