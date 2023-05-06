@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "code-that-fits-in-your-head"
+version = "0.1.0"
+description = "Codebase for following along to the Code That Fits in your Head book"
+authors = ["Joseph Corrado <josephcorrado7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "*"
+black = "*"
+flake8 = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+interrogate = "*"
+isort = "*"
+commitizen = "*"
+ipykernel = "^6.17.1"
+pandas-stubs = "*"
+flake8-bugbear = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
