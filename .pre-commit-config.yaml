@@ -22,3 +22,8 @@ repos:
     entry: black
     language: system
     types: [python]
+- repo: https://github.com/sourcery-ai/sourcery
+  rev: v1.2.0
+  hooks:
+    - id: sourcery
+      args: [--diff=git diff HEAD, --no-summary]
