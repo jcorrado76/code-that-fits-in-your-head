@@ -26,4 +26,7 @@ repos:
   rev: v1.2.0
   hooks:
     - id: sourcery
+      name: sourcery
       args: [--diff=git diff HEAD, --no-summary]
+      types: [python]
+      stages: [push]
